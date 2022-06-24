@@ -1,0 +1,41 @@
+.wrapper {
+  padding: 0 12px;
+  width: 100%;
+  max-width: 1200px;
+  margin: calc(var(--height) + 24px) auto 0;
+
+  .side-bar {
+    padding: 24px;
+    &__auth {
+      border-bottom: 1px solid #e6e6e6;
+      padding-bottom: 6px;
+    }
+
+    &__favicon {
+      font-size: 2rem;
+
+      .like-count {
+        margin-left: 16px;
+      }
+    }
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+    &-info {
+      margin-left: 16px;
+
+      .user-name,
+      .createdAt {
+        margin: 0;
+      }
+
+      .createdAt {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

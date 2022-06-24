@@ -1,0 +1,81 @@
+.blogs {
+  margin: var(--height) auto 0;
+  padding: 18px 28px;
+  max-width: 1200px;
+
+  .card + .card {
+    margin-top: 16px;
+  }
+
+  .heading {
+    font-size: 2.8rem;
+    font-weight: 900;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .user {
+      display: flex;
+      align-items: center;
+
+      .name {
+        margin: 0 0 0 8px;
+        font-weight: 600;
+        font-size: 1.2rem;
+      }
+    }
+
+    .actions {
+      .heart-icon,
+      .more-icon {
+        font-size: 2rem;
+        padding: 4px 8px;
+        cursor: pointer;
+        opacity: 0.7;
+      }
+
+      .heart-icon:hover,
+      .more-icon:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+
+    .content {
+      display: grid;
+      padding-right: 32px;
+      .title {
+        font-weight: 600;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+
+      .desc {
+        margin: 4px 0 15px;
+        line-height: 2rem;
+        font-size: 1.5rem;
+        max-height: 6rem;
+        overflow: hidden;
+        display: block;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+      }
+    }
+    .image {
+      width: 200px;
+      min-height: 100px;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.new-post {
+  padding: 0 16px;
+
+  .header {
+    width: 100%;
+    height: var(--height);
+    padding: 0 16px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e8ebed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    .back-btn {
+      border-color: transparent;
+    }
+  }
+
+  .post-info {
+    margin-top: calc(var(--height) + 12px);
+  }
+
+  .editor {
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+}
